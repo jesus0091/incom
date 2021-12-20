@@ -7,7 +7,7 @@
 
         .s-title {
             @include m-flex(flex, column, center, center);
-            @include m-text($s-title, bold, 1px, 1.25, $color-black)
+            @include m-text($s-super-title/2, bold, 1px, 1.25, $color-black)
         }
 
         .s-text {
