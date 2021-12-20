@@ -43,7 +43,6 @@ header {
 .n-navbar {
   height: 100%;
   width: 100%;
-  padding: 7px;
   position: relative;
   z-index: 99;
 }
@@ -61,10 +60,9 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 22px;
+  padding: 15px;
   cursor: pointer;
 }
 .n-navbar .n-navbar-header .n-navbar-brand {
@@ -79,7 +77,14 @@ header {
 }
 
 .sidebar .nav-left {
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.sidebar .nav-left .fa-arrow-circle-left {
+  font-size: 25px;
 }
 
 .sidebar .sidebar-content,
@@ -113,7 +118,7 @@ header {
 
 .sidebar.active .sidebar-content {
   transform: translateX(0);
-  padding: 1.5rem;
+  padding: 15px;
 }
 
 .sidebar.active .sidebar-overlay {
@@ -150,15 +155,13 @@ header {
 }
 
 .img-sidebar {
-  width: 100px;
+  width: 120px;
 }
 
 .nav-left-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
-  height: 80%;
 }
 
 .body-scrolling {

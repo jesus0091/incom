@@ -5,7 +5,6 @@ header {
 .n-navbar {
     height: 100%;
     width: 100%;
-    padding: 7px;
     position: relative;
     z-index: 99;
 
@@ -17,10 +16,9 @@ header {
 
         .ion-ios-navicon {
             @include m-flex (flex, row, center, center);
-            width: 45px;
-            height: 45px;
             color: rgba($color-white, 0.8);
             font-size: 22px;
+            padding: 15px;
             cursor: pointer;
         }
 
@@ -39,7 +37,12 @@ header {
 .sidebar {
 
     .nav-left {
-        height: 100vh;
+        height: 100%;
+        @include m-flex(flex, column, space-between, start);
+
+        .fa-arrow-circle-left {
+            font-size: 25px;
+        }
     }
 }
 
@@ -76,7 +79,7 @@ header {
 
 .sidebar.active .sidebar-content {
     transform: translateX(0);
-    padding: 1.5rem;
+    padding: 15px;
 }
 
 .sidebar.active .sidebar-overlay {
@@ -113,16 +116,14 @@ header {
 }
 
 .img-sidebar {
-    width: 100px;
+    width: 120px;
 
 }
 
 .nav-left-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    height: 80%;
+    justify-content: center;    
 }
 
 
