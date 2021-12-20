@@ -17,12 +17,17 @@ var App = {
             },
             toggle: function() {
                         $(".ion-ios-navicon").on("touchstart click", function(e) {
-                                    e.preventDefault(), $(".sidebar").toggleClass("active"), 
-                                    $(".nav").removeClass("active"), $(".sidebar .sidebar-overlay").removeClass("fadeOut animated").addClass("fadeIn animated")
+
+                                    e.preventDefault(), 
+                                    $(".sidebar").toggleClass("active"), 
+                                    $(".nav").removeClass("active"), 
+                                    $(".sidebar .sidebar-overlay").removeClass("fadeOut animated").addClass("fadeIn animated"),
+                                    $(".body").addClass("body-scrolling")
                         }), $(".sidebar .sidebar-overlay").on("touchstart click", function(e) {
                                     e.preventDefault(), 
                                     $(".ion-ios-navicon").click(), 
-                                    $(this).removeClass("fadeIn").addClass("fadeOut")
+                                    $(this).removeClass("fadeIn").addClass("fadeOut"),
+                                    $(".body").removeClass("body-scrolling")
                         })
             },
             
@@ -37,4 +42,5 @@ var App = {
 
 $(".sidebar-content").on('click', function () {
   $(".sidebar").removeClass("active");
+  $(".body").removeClass("body-scrolling");
 });
