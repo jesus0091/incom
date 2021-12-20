@@ -169,10 +169,9 @@
   max-height: 100vh;
   position: relative;
   overflow: hidden;
-}
-.h-home .h-image {
-  width: 100%;
-  object-fit: cover;
+  background-image: url("../image/img-banner-01.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .h-home .h-description {
   position: absolute;
@@ -183,7 +182,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   z-index: 9;
 }
 .h-home .h-description h1 {

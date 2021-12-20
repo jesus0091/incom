@@ -2,9 +2,6 @@
     background: $color-03;
     padding: 3rem 2rem;
 
-    .c-contact-s {
-
-    }
 
     h2 {
         @include m-text($s-super-title/2, bold, 1px, 1.15, $color-white);

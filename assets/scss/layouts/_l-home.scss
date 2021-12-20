@@ -4,20 +4,17 @@
     max-height: 100vh;
     position: relative;
     overflow: hidden;
+    background-image: url('../image/img-banner-01.jpg');
+    background-size: cover;
+    background-position: center;
 
-    
-
-    .h-image {
-        width: 100%;
-        object-fit: cover;
-    }
     .h-description {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        @include m-flex (flex, column, center, start);
+        @include m-flex (flex, column, center, center);
         z-index: 9;
 
         h1{
