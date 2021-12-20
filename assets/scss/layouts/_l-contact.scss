@@ -2,10 +2,12 @@
     background: $color-03;
     padding: 3rem 2rem;
 
-    .c-contact-s {}
+    .c-contact-s {
+
+    }
 
     h2 {
-        @include m-text($s-title, bold, 1px, 1.15, $color-white);
+        @include m-text($s-super-title/2, bold, 1px, 1.15, $color-white);
     }
 
     .c-contact-form {
@@ -15,7 +17,7 @@
             background: $color-03;
             border: 1px solid $color-white;
             width: 100%;
-            margin: 5px 0;
+            margin-bottom: 7px;
             padding: 5px 10px;
             color: rgba($color-white, 1);
             
@@ -24,10 +26,6 @@
                 color: rgba($color-white, 0.7);
                 text-transform: uppercase;
                 margin-left: 5px;
-            }
-
-            &:focus {
-                box-shadow: none;
             }
 
         }

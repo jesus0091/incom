@@ -8,5 +8,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesus0091/incom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jesus0091/incom/issues"
+  },
+  "homepage": "https://github.com/jesus0091/incom#readme",
   "description": ""
 }

@@ -8,13 +8,13 @@
     margin: 0 auto;
 
     h2 {
-        @include m-text($s-title, bold, 1px, 1.15, $color-white);
+        @include m-text($s-super-title/2, bold, 1px, 1.5, $color-white);
         text-align: center;
         margin-bottom: 1rem
     }
 
     p {
-        @include m-text($s-text-2, normal, 0.5px, 1, $color-white);
+        @include m-text($s-text-2, normal, 0.5px, 1.15, $color-white);
         text-align: center;
     }
 }
@@ -55,7 +55,7 @@
             }
 
             p {
-                @include m-text($s-text-2, normal, 0.5px, 1, $color-white);
+                @include m-text($s-text-2, normal, 0.5px, 1.15, $color-white);
                 text-align: center;
             }
 

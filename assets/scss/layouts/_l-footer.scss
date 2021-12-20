@@ -1,6 +1,5 @@
 .f-footer {
     background: $color-04;
-    // overflow: hidden;
 
     .f-footer-s {
         padding: 3rem 1rem 1rem;
@@ -37,7 +36,7 @@
         }
 
         h4 {
-            @include m-text ($s-title/3, 500, 1px, 1.5, rgba($color-black, 0.5));
+            @include m-text ($s-title/2, 500, 1px, 1.5, rgba($color-black, 0.5));
             text-align: center;
             text-transform: uppercase;
         }
