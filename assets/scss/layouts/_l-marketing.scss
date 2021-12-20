@@ -1,0 +1,41 @@
+.m-marketing {
+    @include m-flex(flex, row, center, end);
+    position: relative;
+    overflow: hidden;
+    max-height: 80vh;
+
+    .m-img {
+        width: 100%;
+    }
+
+    .m-description {
+        position: absolute;
+        @include m-flex(flex, column, center, center);
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+
+        .m-description-title {
+            @include m-text(80px, bold, 1px, 1, $color-white);
+            text-align: center;
+        }
+
+        .m-description-text {
+            @include m-text($s-text-2, normal, 1px, 1.25, $color-white);
+            width: 70%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(45deg, darken(rgba($color-01, 0.5), 30%) , darken(rgba($color-02, 0.5), 30%) );
+        z-index: 5;
+    }
+    
+
+}

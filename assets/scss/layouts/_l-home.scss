@@ -1,0 +1,42 @@
+.h-home {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    
+
+    .h-image {
+        width: 100%;
+        object-fit: cover;
+    }
+    .h-description {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        @include m-flex (flex, column, center, start);
+        z-index: 9;
+
+        h1{
+            @include m-text($s-super-title, bold, 0.5px, 1.15, $color-white );
+            margin-bottom: 2rem
+        }
+        p{
+            @include m-text($s-text-2*1.2, 400, 0.5px, 1.5, $color-white );
+        }
+        
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color-black, 0.8);
+        z-index: 1;
+    }
+}
