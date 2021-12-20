@@ -1,6 +1,10 @@
-.s-service {
+#services {
+    @include m-flex(flex, row, center, start);
+    min-height: 100vh;
+    padding: 5rem 0;
+}
 
-    @include m-flex(flex, column, center, center);
+.s-service {
 
     .s-description {
         @include m-flex(flex, column, center, center);

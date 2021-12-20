@@ -215,12 +215,15 @@ header {
   z-index: 1;
 }
 
-.s-service {
+#services {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 5rem 0;
 }
+
 .s-service .s-description {
   display: flex;
   flex-direction: column;
@@ -332,7 +335,7 @@ header {
   letter-spacing: 1px;
   line-height: 1.25;
   color: white;
-  width: 70%;
+  width: 90%;
   text-align: center;
   margin-top: 2rem;
 }
