@@ -2,6 +2,7 @@
     @include m-flex(flex, row, center, start);
     min-height: 100vh;
     padding: 5rem 0;
+    overflow: hidden;
 }
 
 .s-service {

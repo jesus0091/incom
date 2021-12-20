@@ -292,6 +292,7 @@ header {
   align-items: start;
   min-height: 100vh;
   padding: 5rem 0;
+  overflow: hidden;
 }
 
 .s-service .s-description {
