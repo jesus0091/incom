@@ -43,3 +43,21 @@
     }
 
 }
+
+@media (min-width: 768px) {
+    .f-footer {
+        .f-footer-brand {
+            justify-content: flex-start !important;
+        }
+
+        h3 {
+            text-align: end !important;
+        }
+
+        .f-footer-address, .f-footer-contact {
+            text-align: end !important;
+            
+        }
+
+    }
+}

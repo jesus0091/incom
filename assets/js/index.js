@@ -44,3 +44,15 @@ $(".sidebar-content").on('click', function () {
   $(".sidebar").removeClass("active");
   $(".body").removeClass("body-scrolling");
 });
+
+$(function(){
+	var navbar = $('.scrolling-navbar');
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() <= 60){
+			navbar.removeClass('navbar-scroll');
+		} else {
+			navbar.addClass('navbar-scroll');
+		}
+	});
+});

@@ -5,6 +5,7 @@
 
     h2 {
         @include m-text($s-super-title/2, bold, 1px, 1.15, $color-white);
+        padding: 1rem 0;
     }
 
     .c-contact-form {
@@ -27,6 +28,7 @@
 
         }
         .pulsate-fwd {
+            @include m-flex(flex, row, center, center);
             background: $color-04;
             border: none;
             color: $color-black;
@@ -41,6 +43,38 @@
         textarea{
             resize: none;
             height: 80px;
+
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .c-contact {
+
+        .c-contact-form, h2 {
+            width: 70%;
+            margin: auto;
+        }
+        .c-contact-form {
+            box-sizing: content-box;
+
+            .input-container {
+                display: flex;
+                justify-content: end;
+
+                input {
+                    width: 50%;
+                    margin: 5px;
+                }
+                textarea {
+                    margin: 5px;
+                }
+            }
+            .pulsate-fwd {
+                width: 20% !important;
+                margin: 5px;
+                border-radius: 100px;
+            }
 
         }
     }

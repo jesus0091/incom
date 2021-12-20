@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,13 +20,29 @@
 </head>
 
 <body class="body">
-    <header class="fixed-top">
-        <nav class="n-navigation">
+    <header class="fixed-top scrolling-navbar">
+        <div class="nav-desktop container d-none d-lg-flex">
+
+            <div class="nav-desktop-img">
+                <img src="assets/image/img-logo-01.png" alt="">
+            </div>
+
+            <ul class="nav-desktop-list">
+                <li class="nav-desktop-item"><a href="#home">Inicio</a></li> 
+                <li class="nav-desktop-item"><a href="#services">Servicios</a></li> 
+                <li class="nav-desktop-item"><a href="#about">Nosotros</a></li> 
+                <li class="nav-desktop-item"><a href="#methodology">Metodología</a></li> 
+                <li class="nav-desktop-item"><a href="#contact">Contacto</a></li> 
+            </ul>
+
+        </div>
+        <nav class="d-lg-none n-navigation">
             <div class="n-navbar clearfix">
                 <!-- Menu Header -->
                 <div class="n-navbar-header">
                     <div class="ion-ios-navicon pull-left"><i class="fas fa-bars"></i></div>
-                    <a class="n-navbar-brand" href="#home"><img class="n-navbar-img" src="assets/image/img-logo-01.png" alt="logo"></a>
+                    <a class="n-navbar-brand" href="#home"><img class="n-navbar-img" src="assets/image/img-logo-01.png"
+                            alt="logo"></a>
                 </div>
                 <!-- Menu Sidebar -->
                 <div class="sidebar">
@@ -46,13 +62,14 @@
                             <div><i class="fas fa-arrow-circle-left"></i></div>
                         </div>
                     </div>
-                </div>            
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="container-fluid p-0 m-0" id="home"> <!-- HOME -->
-            <div class="h-home" >
+        <section class="container-fluid p-0 m-0" id="home">
+            <!-- HOME -->
+            <div class="h-home">
                 <div class="h-description">
                     <div class="container">
                         <h1>We will help you <br> get there</h1>
@@ -62,7 +79,8 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid" id="services"> <!-- SERVICE -->
+        <section class="container-fluid" id="services">
+            <!-- SERVICE -->
             <div class="container s-service">
                 <div class="s-description">
                     <h2 class="s-title">Servicios</h2>
@@ -71,44 +89,54 @@
                 <div class="s-grid">
                     <div class="s-item">
                         <p class="s-item-text">Publicidad <br>en Google</p>
+                        <p class="s-item-description">Google Ads, Adwords, SEM o PPC. Se trata de una herramienta de Google que nos permite gestionar anuncios publicitarios en su motor de búsqueda de Google y en su red de Partners (YouTube, Google Play, Google News), en base a palabras clave (keywords).</p>
                         <img class="s-item-img" src="assets/image/img-01.png" alt="Publicidad en Google">
                     </div>
                     <div class="s-item">
                         <p class="s-item-text">SEO</p>
+                        <p class="s-item-description">El posicionamiento en buscadores, optimización en motores de búsqueda o SEO (del inglés Search Engine optimization), es un conjunto de acciones orientadas a mejorar el posicionamiento de un sitio web en la lista de resultados de Google, Bing u otros buscadores de internet.</p>
                         <img class="s-item-img" src="assets/image/img-02.png" alt="SEO">
                     </div>
                     <div class="s-item">
                         <p class="s-item-text">Community<br>Manager</p>
+                        <p class="s-item-description">Consiste en construir y administrar la comunidad online y gestionar la identidad y la imagen de marca, creando y manteniendo relaciones estables y duraderas con sus clientes, seguidores o público</p>
                         <img class="s-item-img" src="assets/image/img-03.png" alt="Community Manager">
                     </div>
                     <div class="s-item">
                         <p class="s-item-text">Publicidad en<br>Redes Sociales</p>
+                        <p class="s-item-description">Consiste en mostrar anuncios pagos a los usuarios de una red social en particular. Esto permite aumentar el alcance de las acciones de marketing, llegando a un gran volumen de clientes potenciales y optimizando el posicionamiento de la marca.</p>
                         <img class="s-item-img" src="assets/image/img-04.png" alt="Publicidad en Redes Sociales">
                     </div>
                     <div class="s-item">
                         <p class="s-item-text">Diseño Web</p>
+                        <p class="s-item-description">Nos encargamos de trabajar junto a las marcas para definir y materializar tanto el diseño visual como el desarrollo técnico del portal web que mejor se ajuste a las necesidades del cliente.</p>
                         <img class="s-item-img" src="assets/image/img-05.png" alt="Diseño Web">
                     </div>
                     <div class="s-item">
                         <p class="s-item-text">Email<br>Marketing</p>
+                        <p class="s-item-description">Es una herramienta de comunicación con el cliente o potencial cliente, que nos permite enviar mensajes a su correo electrónico, adaptando el contenido a diferentes destinatarios para conseguir una variedad de objetivos de marketing.</p>
                         <img class="s-item-img" src="assets/image/img-06.png" alt="Email Marketing">
                     </div>
                     <div class="s-item">
                         <p class="s-item-text">Google<br>Analytics</p>
+                        <p class="s-item-description">La analítica web nos permite monitorizar y descubrir los datos más relevantes sobre los usuarios de tu web que nos permitan optimizar el sitio y tomar las mejores decisiones. Conoce a tus usuarios y mejora tus acciones de marketing gracias a la analítica web. Te ayudamos a definir los puntos clave para monitorizar y realizamos informes y paneles de control personalizados, orientados a mostrar la información más relevante de forma clara y limpia.</p>
                         <img class="s-item-img" src="assets/image/img-07.png" alt="Google Analytics">
                     </div>
                     <div class="s-item">
                         <p class="s-item-text">Identidad<br>de Marca</p>
+                        <p class="s-item-description">La identidad de marca es la construccion gráfica de los conceptos y mensajes que la empresa presenta a sus clientes así como también las emociones que busca evocar en los consumidores. Consiste en proyectar y desarrollar elementos gráficos que permitan gestionar ésta identidad a través del branding</p>
                         <img class="s-item-img" src="assets/image/img-08.png" alt="Identidad de Marca">
                     </div>
                     <div class="s-item">
                         <p class="s-item-text">Coaching para<br>Emprendedores</p>
+                        <p class="s-item-description">Buscar profundizar en las habilidades personales del emprendedor para ayudarlo a alcanzar sus objetivos. A través del coaching, se podrá facilitar la identificación, el diseño y la planificación de las metas profesionales a alcanzar.</p>
                         <img class="s-item-img" src="assets/image/img-09.png" alt="Coaching para Emprendedores">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container-fluid p-0 m-0 panel"> <!-- MARKETING -->
+        <section class="container-fluid p-0 m-0 panel">
+            <!-- MARKETING -->
             <div class="m-marketing">
                 <div class="m-description container">
                     <h2 class="m-description-title">Marketing<br>Estratégico</h2>
@@ -119,13 +147,15 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid panel" id="about"> <!-- ABOUT -->
+        <section class="container-fluid panel" id="about">
+            <!-- ABOUT -->
             <h2>SECCION NOSOTROS</h2>
         </section>
-        <section class="container-fluid px-0 m-0 panel methodology" id="methodology"> <!-- METHODOLOGY -->
+        <section class="container-fluid px-0 m-0 panel methodology" id="methodology">
+            <!-- METHODOLOGY -->
             <div class="container ">
                 <div class="th-description">
-                    <h2 >Metodología</h2>
+                    <h2>Metodología</h2>
                     <p>Utilizamos el método Lean Start-Up combinado con el método Core-Business.
                         Nuesto sistema de trabajo se caracterizan por la experimentación y el aprendizaje continuo.</p>
                 </div>
@@ -175,31 +205,26 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid c-contact" id="contact"> <!-- CONTACT -->
+        <section class="container-fluid c-contact" id="contact">
+            <!-- CONTACT -->
             <div class="container c-contact-s">
-                <h2 >Hablemos</h2>
+                <h2>Hablemos</h2>
                 <form class="c-contact-form" action="" method="POST" id="contact-form">
                     <div class="input-container">
                         <label for="cliente" hidden>Nombre</label>
                         <input type="text" id="cliente" name="nombre" placeholder="Nombre" required>
-                    </div>
-                    <div class="input-container">
                         <label for="cliente2" hidden>Apellido</label>
                         <input type="text" id="cliente2" name="nombre" placeholder="Apellido" required>
                     </div>
                     <div class="input-container">
                         <label for="email" hidden>Email</label>
                         <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-container">
                         <label for="telefono" hidden>Número de contacto</label>
                         <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
                     </div>
                     <div class="input-container">
                         <label for="pais" hidden>País</label>
                         <input type="text" id="pais" name="producto" placeholder="País" required>
-                    </div>
-                    <div class="input-container">
                         <label for="ciudad" hidden>Ciudad</label>
                         <input type="text" id="ciudad" name="producto" placeholder="Ciudad" required>
                     </div>
@@ -207,7 +232,7 @@
                         <label for="detalles" hidden>Detalles del pedido</label>
                         <textarea id="detalles" name="consulta" placeholder="Consulta" required></textarea>
                     </div>
-                    <div class="input-container pulsate-fwd">
+                    <div class="input-container">
                         <input class="pulsate-fwd" type="submit" value="Enviar">
                     </div>
                 </form>
@@ -217,19 +242,19 @@
     <footer class="f-footer">
         <div class="container f-footer-s">
             <div class="row">
-                <div class="col-md-4 order-2">
+                <div class="col-md-4 order-2 order-md-0">
                     <a class="f-footer-brand" href="#home">
                         <img src="assets/image/img-logo-02.png" alt="logo">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-md-4">
                     <h3><i class="fas fa-map-marker-alt"></i>Dirección</h3>
                     <ul class="f-footer-address">
                         <li>Av. Cabildo 714, Planta Baja Departamento 4. CP 1426</li>
                         <li>Belgrano - CABA</li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-md-4">
                     <h3><i class="fas fa-phone-alt"></i>Teléfonos</h3>
                     <ul class="f-footer-contact">
                         <li>+54 9 11 6401 4489</li>
@@ -240,6 +265,8 @@
             <h4>&copy;Copyright 2022 INCOM</h4>
         </div>
     </footer>
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
@@ -248,7 +275,7 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- JavaScript -->
     <script src="assets/js/index.js"></script>
 
