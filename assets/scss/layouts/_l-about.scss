@@ -1,5 +1,19 @@
 #about {
     background: rgb(249 249 249);
+
+}
+
+.a-about {
+
+    .a-description {
+        .a-description-title {
+            text-align: center;
+        }
+        
+        .a-description-text {
+            text-align: center;
+        }
+    }
 }
 
 .a-grid {
@@ -8,7 +22,7 @@
     grid-gap: 1rem;
     grid-auto-rows: auto;
 
-    @media (min-width: 768px){
+    @media (min-width: 576px){
         grid-template-columns: repeat(2, 1fr);
 
         .a-grid-item {
@@ -24,6 +38,10 @@
     }
 
     .a-grid-item {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 2;
+
         padding: 1.75rem;
 
         .a-item-img {
@@ -37,6 +55,10 @@
             p {
                 text-align: center;
             }
+        }
+
+        &:hover {
+            background: darken(rgb(249 249 249), 5%);
         }
     }
 }

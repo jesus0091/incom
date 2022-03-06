@@ -510,13 +510,20 @@ header {
   background: #f9f9f9;
 }
 
+.a-about .a-description .a-description-title {
+  text-align: center;
+}
+.a-about .a-description .a-description-text {
+  text-align: center;
+}
+
 .a-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
   grid-auto-rows: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .a-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -533,6 +540,9 @@ header {
   }
 }
 .a-grid .a-grid-item {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
   padding: 1.75rem;
 }
 .a-grid .a-grid-item .a-item-img {
@@ -546,6 +556,9 @@ header {
 }
 .a-grid .a-grid-item .a-item-body p {
   text-align: center;
+}
+.a-grid .a-grid-item:hover {
+  background: #ececec;
 }
 
 .methodology {
